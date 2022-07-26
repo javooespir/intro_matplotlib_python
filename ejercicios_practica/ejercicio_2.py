@@ -45,5 +45,19 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.plot(x, y1, color='m', marker='x', label="f(x)=x^2")
+    ax.plot(x, y2, color='c', marker='o', label='g(x)=x^3')
+
+    ax.set_facecolor('whitesmoke')
+    ax.set_title("Funciones cuadrática y cúbica.")
+    ax.set_ylabel("y")
+    ax.set_xlabel("x")
+    ax.legend()
+    ax.grid(ls='dashdot')
+
+    plt.show()
+
 
     print("terminamos")

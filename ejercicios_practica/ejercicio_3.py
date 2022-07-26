@@ -33,5 +33,17 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.scatter(x, y, color='g', marker='o', label="f(x)=tanh(x)")
+
+    ax.set_facecolor('whitesmoke')
+    ax.set_title("Tangente hiperbólica (-pi<x<pi).")
+    ax.set_ylabel("y")
+    ax.set_xlabel("x")
+    ax.legend()
+    ax.grid(ls='dashdot')
+
+    plt.show()
 
     print("terminamos")

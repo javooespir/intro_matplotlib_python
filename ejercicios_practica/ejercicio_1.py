@@ -35,4 +35,17 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.plot(x, y, color='r', marker='x', label="f(x)=x^2")
+    
+    ax.set_facecolor('whitesmoke')
+    ax.set_title("f(x)=x^2")
+    ax.set_ylabel("y")
+    ax.set_xlabel("x")
+    ax.legend()
+    ax.grid(ls='dashdot')
+
+    plt.show()
+
     print("terminamos")
